@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Script</title>
+    <script>
+        // Your JavaScript code here
+        function modifyContent(selector, newText) {
+            var targetElement = document.querySelector(selector);
+            if (targetElement) {
+                targetElement.textContent = newText;
+            }
+        }
+
+        // 逐個修改目標內容
+        modifyContent('#gridview-1049-record-ext-record-29 > td.x-grid-cell.x-grid-td.x-grid-cell-headerId-gridcolumn-1047.x-unselectable > div', 'A');
+        modifyContent('#gridview-1049-record-ext-record-30 > td.x-grid-cell.x-grid-td.x-grid-cell-headerId-gridcolumn-1047.x-unselectable > div', 'B+');
+        modifyContent('#gridview-1049-record-ext-record-31 > td.x-grid-cell.x-grid-td.x-grid-cell-headerId-gridcolumn-1047.x-unselectable > div', 'A-');
+        modifyContent('#gridview-1049-record-ext-record-32 > td.x-grid-cell.x-grid-td.x-grid-cell-headerId-gridcolumn-1047.x-unselectable > div', 'B+');
+        modifyContent('#gridview-1049-record-ext-record-33 > td.x-grid-cell.x-grid-td.x-grid-cell-headerId-gridcolumn-1047.x-unselectable > div', 'C-');
+        modifyContent('#gridview-1049-record-ext-record-34 > td.x-grid-cell.x-grid-td.x-grid-cell-headerId-gridcolumn-1047.x-unselectable > div', 'A-');
+        modifyContent('#gridview-1049-record-ext-record-35 > td.x-grid-cell.x-grid-td.x-grid-cell-headerId-gridcolumn-1047.x-unselectable > div', 'A+');
+
+        // 刪除不及格的內容
+        modifyContent('#gridview-1049-record-ext-record-31 > td.x-grid-cell.x-grid-td.x-grid-cell-headerId-gridcolumn-1048.x-grid-cell-last.x-unselectable > div', '');
+        modifyContent('#gridview-1049-record-ext-record-32 > td.x-grid-cell.x-grid-td.x-grid-cell-headerId-gridcolumn-1048.x-grid-cell-last.x-unselectable > div', '');
+        modifyContent('#gridview-1049-record-ext-record-33 > td.x-grid-cell.x-grid-td.x-grid-cell-headerId-gridcolumn-1048.x-grid-cell-last.x-unselectable > div', '');
+
+        // 學期平均頁面
+        modifyContent('#gridview-1073-record-ext-record-3 > td.x-grid-cell.x-grid-td.x-grid-cell-headerId-gridcolumn-1071.x-unselectable > div', '25.0');
+        modifyContent('#gridview-1073-record-ext-record-3 > td.x-grid-cell.x-grid-td.x-grid-cell-headerId-gridcolumn-1072.x-grid-cell-last.x-unselectable > div', '3.51');
+    </script>
+</head>
+<body>
+    <!-- Your HTML content goes here -->
+</body>
+</html> 
